@@ -1,22 +1,99 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.4;
+  background-color: #900c3f;
+  color: #fff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 1.5rem;
+  height: 100vh;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+.root {
+  width: 80%;
+}
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-start;
+  width: 600px;
+  margin: 30px;
+  
+}
+form {
+  width: 80%;
+  margin: 30px;
+  overflow: auto;
+  padding: 15px;
+}
+input {
+  height: 30px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  margin-top: 15px;
+  font-size: 14px !important;
+  padding-left: 10px;
+  font-family: Arial, Helvetica, sans-serif !important;
 }
 
-.App-link {
-  color: #09d3ac;
+li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  margin-bottom: 10px;
+}
+
+button {
+  outline: none;
+  width: 80px;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+  background-color: cadetblue;
+  color: #fff;
+  overflow: hidden;
+}
+
+button:hover {
+  background-color: rgb(67, 150, 153);
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  outline: none;
+  width: 80px;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+  background-color: limegreen;
+  color: #fff;
+  overflow: hidden;
+  cursor: pointer;
+}
+button[type="submit"]:hover {
+  transition-duration: 300ms;
+  background-color: rgb(39, 180, 39);
 }
